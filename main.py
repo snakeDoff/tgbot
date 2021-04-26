@@ -44,7 +44,6 @@ def add_number(update, context):
 
         with open('numbers.json', 'w') as fil:
             json.dump(f, fil)
-            update.message.reply_text('Команда выполнена успешно')
 
     except AssertionError:
         update.message.reply_text(
